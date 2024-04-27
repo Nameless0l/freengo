@@ -15,12 +15,17 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.15.15",
+    "@mui/lab": "^5.0.0-alpha.170",
     "@mui/material": "^5.15.15",
+    "apexcharts": "^3.49.0",
     "bootstrap": "^5.3.3",
+    "clipboard": "^2.0.11",
+    "feather": "^0.0.6",
     "next": "14.2.3",
     "react": "^18",
     "react-bootstrap": "^2.10.2",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "simplebar": "^6.2.5"
   },
   "devDependencies": {
     "@types/node": "^20",

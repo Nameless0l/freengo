@@ -22140,7 +22140,7 @@ select.form-control[data-multiselectsplitter-firstselect-selector], select.form-
 }
 .auth-main .auth-wrapper.v2 .auth-sidecontent::after {
   content: "";
-  background-image: url("../images/authentication/auth2-login.svg");
+  /*background-image: url("./../images/authentication/auth2-login.svg");*/
   background-repeat: no-repeat;
   background-position: bottom;
   z-index: 1;
@@ -22182,7 +22182,7 @@ select.form-control[data-multiselectsplitter-firstselect-selector], select.form-
 }
 .auth-main .auth-wrapper.v1 .auth-sidecontent::after {
   content: "";
-  background-image: url("../images/authentication/auth2-login.svg");
+  /*background-image: url("../images/authentication/auth2-login.svg");*/
   background-repeat: no-repeat;
   background-position: bottom;
   z-index: 1;

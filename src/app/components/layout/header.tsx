@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import avatar2 from './../assets/images/user/avatar-2.jpg';
-import avatar3 from './../assets/images/user/avatar-3.jpg';
+import avatar2 from '../../assets/images/user/avatar-2.jpg';
+import avatar3 from '../../assets/images/user/avatar-3.jpg';
 
 
 export const Header = () => {

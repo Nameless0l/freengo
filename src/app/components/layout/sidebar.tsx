@@ -1,5 +1,5 @@
-import {menuItems, reviewItems} from '@/app/components/sidebar-data';
-import {UserProfile} from '@/app/components/user-profile';
+import {menuItems, reviewItems} from '@/app/components/layout/sidebar-data';
+import {UserProfile} from '@/app/components/layout/user-profile';
 import Link from '@mui/material/Link';
 
 export const Sidebar = () => {
