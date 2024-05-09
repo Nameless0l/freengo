@@ -9,10 +9,10 @@ export const DriverActions = () => {
 
 		<span className={' btn btn-warning rounded-5 d-block mb-1 p-4 shadow-sm'}>
 					<i className={'ti ti-message'} style={{fontSize: 30, color: 'black'}}></i>
-				</span>
+		</span>
 
 		<span className={' btn btn-secondary rounded-5 d-block mb-1 p-4 shadow-sm'}>
 					<i className={'ti ti-phone'} style={{fontSize: 30, color: 'black'}}></i>
-				</span>
+		</span>
 	</div>
 }
