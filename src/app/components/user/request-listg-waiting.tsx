@@ -26,7 +26,7 @@ export default function RequestListElementsWaiting() {
     return (
         <div>
             {Array.from(Array(3).keys()).map((_, i) => (
-                <Accordion >
+                <Accordion key={i} >
                     <AccordionSummary
                         expandIcon={<PlusIcon />}
                         aria-controls="panel3-content"

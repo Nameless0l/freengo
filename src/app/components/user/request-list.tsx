@@ -30,7 +30,7 @@ export default function RequestListElements() {
 
         <div>
             {Array.from(Array(3).keys()).map((_, i) => (
-                <Accordion expanded={expanded === String(i)} onChange={handleChange(String(i))}>
+                <Accordion key={i} expanded={expanded === String(i)} onChange={handleChange(String(i))}>
                 <AccordionSummary
                     expandIcon={<PlusIcon />}
                     aria-controls="panel1bh-content"
