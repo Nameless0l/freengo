@@ -1,4 +1,4 @@
-import avatar from '@/app/assets/images/user/avatar-3.jpg';
+import avatar from '@/app/assets/images/user/IMG_5413-1.jpg';
 import Image from 'next/image';
 
 export type ArrivingDriverProps =
