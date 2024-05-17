@@ -7,7 +7,7 @@ export const menuItems = [
 	{
 		label: 'Mes déplacements',
 		icon: 'history',
-		path: '/'
+		path: '/user/request-lists'
 	},
 	{
 		label: 'Mon Profil',
@@ -17,7 +17,7 @@ export const menuItems = [
 	{
 		label: 'Parametres',
 		icon: 'settings',
-		path: '/settings'
+		path: '/user'
 	},
 	{
 		label: 'Inviter un ami',

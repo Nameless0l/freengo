@@ -5,17 +5,11 @@ import {DriverActions} from '@/app/components/home/driver-actions';
 import {TransportType} from '@/app/components/home/transport-type';
 import TravelDescription from '@/app/components/home/travel-description';
 import Utils from '@/app/helpers/utils';
+import {Start} from '@mui/icons-material';
 import {useState} from 'react';
-import Button from "@mui/material/Button";
-import {ComboBox, ElementForTravel} from "@/app/components/layout/test";
-import {FormControl} from "@mui/material";
 
-export default function HomeUI() {
+export default function WaitigUI() {
 	const [selected, setSelected] = useState<0 | 1 | 2>(0);
-	const [initRequest, setInitRequest] = useState<boolean>(false);
-	const handleInitRequest = () => {
-		setInitRequest(! initRequest);
-	}
 	const reviewItems = [
 		{
 			icon: 'map-2',
@@ -34,20 +28,20 @@ export default function HomeUI() {
 
 			{/* Vehicule qui arrive */}
 			<ArrivingDriver driverName={'Loic Mbassi'} identificationNumber={'CE 732 EB'} phone={'697 548 632'}
-							ratings={4.5}/>
+			                ratings={4.5}/>
 
 			{/* Les actions relatives aux vehicule qui arrive */}
-			<DriverActions/>
+			<DriverActions short={true}/>
 
 			<hr className={'w-100'}/>
 
 			<div className={' d-flex w-100 justify-content-evenly align-items-center mb-5'}>
-				<TransportType action={() => setSelected(0)} isSelected={selected === 0} name={"Express"} icon={'bike'}
-							   label={"Moto"} price={650}/>
-				<TransportType action={() => setSelected(1)} isSelected={selected === 1} name={"Ramassage"}
-							   icon={'caravan'} label={"Voiture"} price={500}/>
-				<TransportType action={() => setSelected(2)} isSelected={selected === 2} name={"Depôt"} icon={'car'}
-							   label={"Voiture - VIP"} price={1200}/>
+				<TransportType  isSelected={selected === 0} name={"Express"} icon={'bike'}
+				               label={"Moto"} price={650}/>
+				<TransportType  isSelected={selected === 1} name={"Ramassage"}
+				               icon={'caravan'} label={"Voiture"} price={500}/>
+				<TransportType  isSelected={selected === 2} name={"Depôt"} icon={'car'}
+				               label={"Voiture - VIP"} price={1200}/>
 			</div>
 
 
@@ -63,21 +57,10 @@ export default function HomeUI() {
 
 			<hr className={"px-4 my-2"}/>
 
-			{initRequest? <>
-					<TravelDescription key="trave"/>
-					<span key={1} className={'text-center'}>
-				<i className={`ti ti-access-point mb-2 d-block`}></i>
-				<span className={''}> LE NOM </span>
-			</span></>:
-				<FormControl>
-					<ComboBox/>
-					<ElementForTravel/>
-				</FormControl>
-			}
+			<TravelDescription key="trave"/>
 
 			<div className="col-md-12 ms-auto  d-flex align-items-center justify-content-center">
-				{/*<span className={"btn btn-outline-success float-end "}>Initier une demande</span>*/}
-				<Button className={"btn btn-outline-success mt-3 float-end "} size="small" onClick={handleInitRequest}>Initier une demande</Button>
+				<span className={"btn btn-outline-dark float-end "}>Debuter la course <Start/> </span>
 			</div>
 		</div>
 
