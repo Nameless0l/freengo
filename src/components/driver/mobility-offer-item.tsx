@@ -101,10 +101,8 @@ export const MobilityOfferListItem: React.FC<OfferItemProps> = ({ offer }) => {
             <Box display="flex" alignItems="center">
               <DirectionsWalk color="secondary" />
               <Typography variant="body2" color="text.secondary" ml={1}>
-                {Utils.formatNumber({
-                  number: offer.distance_to_pickup_location,
-                })}{" "}
-                km
+                {offer.distance_to_pickup_location * 1000} m
+                
               </Typography>
             </Box>
           </Grid>
@@ -112,7 +110,7 @@ export const MobilityOfferListItem: React.FC<OfferItemProps> = ({ offer }) => {
             <Box display="flex" alignItems="center">
               <AttachMoney color="info" />
               <Typography variant="body2" color="text.secondary" ml={1}>
-                {Utils.formatNumber({ number: offer.mobility_cost })} €
+                {Utils.formatNumber({ number: offer.mobility_cost })}
               </Typography>
             </Box>
           </Grid>
@@ -123,15 +121,14 @@ export const MobilityOfferListItem: React.FC<OfferItemProps> = ({ offer }) => {
                 : "Non négociable"}
             </Typography>
           </Grid>
-          <Divider/>
-          <Grid item>
-            <IconButton edge="end">
+          
+        </Grid>
+
+        <IconButton edge="end" className={"mt-4"}>
               <Button variant="outlined" color="primary">
                 Postuler
               </Button>
             </IconButton>
-          </Grid>
-        </Grid>
       </Box>
     </>
   );
