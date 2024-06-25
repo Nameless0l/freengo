@@ -1,3 +1,4 @@
+import { offersList } from "@/mock/driver/offers-list";
 import { mockPassengers, mockWaitlist } from "@/mock/driver/passengers";
 
 export default class DriverHomeDataSource {
@@ -11,6 +12,6 @@ export default class DriverHomeDataSource {
 
   // pour la partie liste des offres
   static getOffersLists(){
-    return {}
+    return offersList;
   }
 }

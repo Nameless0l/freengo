@@ -8,7 +8,7 @@ export const offersList = [
       email: "john.doe@example.com",
       picture: "https://via.placeholder.com/150",
     },
-    distance_from_pickup_location: 5.2,
+    distance_to_pickup_location: 5.2,
     offer_status: "Pending",
     mobility_cost: 12.5,
     places_of_seats: 2,
@@ -16,13 +16,15 @@ export const offersList = [
     bundle: "Standard",
     pickup_location: {
       id: "789e4567-e89b-12d3-a456-426655440002",
-      name: "Central Station",
+      poi_name: "Central Station",
       address: "123 Main Street",
+      description: "123 Main Street",
     },
     dropoff_location: {
       id: "012e4567-e89b-12d3-a456-426655440003",
-      name: "Downtown Office",
+      poi_name: "Downtown Office",
       address: "456 Park Avenue",
+      description: "456 Park Avenue",
     },
   },
   {
@@ -33,7 +35,7 @@ export const offersList = [
       email: "jane.smith@example.com",
       picture: "https://via.placeholder.com/150",
     },
-    distance_from_pickup_location: 8.1,
+    distance_to_pickup_location: 8.1,
     offer_status: "Accepted",
     travel_time: "45 minutes",
     mobility_cost: 18.75,
@@ -42,13 +44,15 @@ export const offersList = [
     bundle: "Premium",
     pickup_location: {
       id: "234e4567-e89b-12d3-a456-426655440004",
-      name: "Airport Terminal",
+      poi_name: "Airport Terminal",
       address: "789 Aviation Blvd",
+      description: "789 Aviation Blvd",
     },
     dropoff_location: {
       id: "567e4567-e89b-12d3-a456-426655440005",
-      name: "City Center",
+      poi_name: "City Center",
       address: "321 Park Plaza",
+      description: "321 Park Plaza",
     },
   },
   {
@@ -70,11 +74,13 @@ export const offersList = [
       id: "345e4567-e89b-12d3-a456-426655440009",
       name: "Suburban Station",
       address: "159 Oak Street",
+      desciption: "159 Oak Street",
     },
     dropoff_location: {
       id: "678e4567-e89b-12d3-a456-426655440010",
       name: "Shopping Mall",
       address: "753 Elm Avenue",
+      description: "753 Elm Avenue",
     },
   },
 ];
