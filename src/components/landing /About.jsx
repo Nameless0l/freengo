@@ -1,5 +1,5 @@
 import React from "react";
-import CarPng from "../../../assets/assets/car1.png";
+import CarPng from "../../assets/assets/car1.png";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const About = () => {
@@ -21,7 +21,8 @@ const About = () => {
                 About us
               </h1>
               <p data-aos="fade-up" className="lead">
-                je ne sais pas quoi mettre, bref ecrivons un truc
+                Freengo c'est une plateforme qui permet d'assurer le deplacement des individus et des biens dans la ville de Yaounde et au-dela,
+                il s'agit 
               </p>
               <Button
                 data-aos="fade-up"

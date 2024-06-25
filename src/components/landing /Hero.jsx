@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import carPng from "../../../assets/assets/car.png";
-import yellowCar from "../../../assets/assets/banner-car.png";
+import carPng from "../../assets/assets/car.png";
+import yellowCar from "../../assets/assets/banner-car.png";
 import AOS from "aos";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 

@@ -7,15 +7,12 @@ import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 // Component import
-import Navbar from "./Navbar/Navbar";
-import Hero from "./Hero/Hero";
-import About from "./About/About";
-import Services from "./Services/Services";
-import CarList from "./CarList/CarList";
-
-
-
-import Footer from "./Footer/Footer";
+import Navbar from "../../components/landing /Navbar";
+import Hero from "../../components/landing /Hero";
+import About from "../../components/landing /About";
+import Services from "../../components/landing /Services";
+import CarList from "../../components/landing /CarList";
+import Footer from "../../components/landing /Footer";
 
 const App = () => {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');

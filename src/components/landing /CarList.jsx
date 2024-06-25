@@ -1,8 +1,8 @@
 import React from "react";
 import { Grid, Typography, Button } from "@mui/material";
-import whiteCar from "../../../assets/assets/white-car.png";
-import car2 from "../../../assets/assets/car5.png";
-import car3 from "../../../assets/assets/car6.png";
+import whiteCar from "../../assets/assets/white-car.png";
+import car2 from "../../assets/assets/car5.png";
+import car3 from "../../assets/assets/car6.png";
 
 const carList = [
   { name: "BMW UX", image: whiteCar, aosDelay: "0" },
