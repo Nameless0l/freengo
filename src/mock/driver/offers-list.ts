@@ -1,4 +1,80 @@
-const offersList = [{
-  passenger:"John",
-  
-}]
+// liste des offres qui peuvent matcher avec un chauffeur
+export const offersList = [
+  {
+    id: "123e4567-e89b-12d3-a456-426655440000",
+    customer: {
+      id: "901e4567-e89b-12d3-a456-426655440006",
+      name: "John Doe",
+      email: "john.doe@example.com",
+      picture: "https://via.placeholder.com/150",
+    },
+    distance_from_pickup_location: 5.2,
+    offer_status: "Pending",
+    mobility_cost: 12.5,
+    places_of_seats: 2,
+    is_mobility_cost_negociable: true,
+    bundle: "Standard",
+    pickup_location: {
+      id: "789e4567-e89b-12d3-a456-426655440002",
+      name: "Central Station",
+      address: "123 Main Street",
+    },
+    dropoff_location: {
+      id: "012e4567-e89b-12d3-a456-426655440003",
+      name: "Downtown Office",
+      address: "456 Park Avenue",
+    },
+  },
+  {
+    id: "456e4567-e89b-12d3-a456-426655440001",
+    customer: {
+      id: "678e4567-e89b-12d3-a456-426655440007",
+      name: "Jane Smith",
+      email: "jane.smith@example.com",
+      picture: "https://via.placeholder.com/150",
+    },
+    distance_from_pickup_location: 8.1,
+    offer_status: "Accepted",
+    travel_time: "45 minutes",
+    mobility_cost: 18.75,
+    places_of_seats: 3,
+    is_mobility_cost_negociable: false,
+    bundle: "Premium",
+    pickup_location: {
+      id: "234e4567-e89b-12d3-a456-426655440004",
+      name: "Airport Terminal",
+      address: "789 Aviation Blvd",
+    },
+    dropoff_location: {
+      id: "567e4567-e89b-12d3-a456-426655440005",
+      name: "City Center",
+      address: "321 Park Plaza",
+    },
+  },
+  {
+    id: "789e4567-e89b-12d3-a456-426655440002",
+    customer: {
+      id: "012e4567-e89b-12d3-a456-426655440008",
+      name: "Michael Johnson",
+      email: "michael.johnson@example.com",
+      picture: "https://via.placeholder.com/150",
+    },
+    distance_from_pickup_location: 3.7,
+    offer_status: "Rejected",
+    travel_time: "20 minutes",
+    mobility_cost: 9.5,
+    places_of_seats: 1,
+    is_mobility_cost_negociable: true,
+    bundle: "Basic",
+    pickup_location: {
+      id: "345e4567-e89b-12d3-a456-426655440009",
+      name: "Suburban Station",
+      address: "159 Oak Street",
+    },
+    dropoff_location: {
+      id: "678e4567-e89b-12d3-a456-426655440010",
+      name: "Shopping Mall",
+      address: "753 Elm Avenue",
+    },
+  },
+];

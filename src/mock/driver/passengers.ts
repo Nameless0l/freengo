@@ -38,18 +38,19 @@ export const mockPassengers = [
   },
 ];
 
-// liste d'attente du vehicule
+// liste d'attente du vehicule (personnes qui attendent l'arrivée du vehicule)
 export const mockWaitlist = [
   {
     name: "Alice Brown",
     picture: "https://via.placeholder.com/150",
-    departure: {
+    distance_to_pickup_point: 0.042,
+    pickup_location: {
       latitude: 51.507351,
       longitude: -0.127758,
       poiName: "Gare de Victoria",
       description: "Gare principale de Londres",
     },
-    destination: {
+    dropoff_location: {
       latitude: 51.500152,
       longitude: -0.124756,
       poiName: "Buckingham Palace",
@@ -60,14 +61,15 @@ export const mockWaitlist = [
   },
   {
     name: "Robert Johnson",
+    distance_to_pickup_point: 0.042,
     picture: "https://via.placeholder.com/150",
-    departure: {
+    pickup_location: {
       latitude: 40.73061,
       longitude: -73.935242,
       poiName: "Grand Central Terminal",
       description: "Gare historique de New York",
     },
-    destination: {
+    dropoff_location: {
       latitude: 40.782864,
       longitude: -73.967177,
       poiName: "Central Park",

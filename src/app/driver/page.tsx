@@ -1,5 +1,6 @@
 "use client";
 import { PassengerItem } from "@/components/driver/passenger-item";
+import { WaitListItem } from "@/components/driver/waitlist-item";
 import DriverHomeDataSource from "@/datasources/driver-home.datasources";
 import { Button, Divider, List } from "@mui/material";
 import Link from "next/link";
@@ -30,16 +31,22 @@ export default function DriverHome() {
         <List>
           {waitList.map((passenger, index) => (
             <div key={index}>
-              <PassengerItem passenger={passenger} />
+              <WaitListItem waitlistItem={passenger} />
               {index < waitList.length - 1 && <Divider />}
             </div>
           ))}
         </List>
       }
 
-      <Link href={"driver/offers"}>
-        <Button variant="outlined">Voir les offres disponibles</Button>
-      </Link>
+      <Divider />
+      <Divider />
+      <Divider />
+
+      <div className="mt-4">
+        <Link href="/driver/offers/" className="btn btn-outline-primary">
+          Consulter les offres
+        </Link>
+      </div>
     </div>
   );
 }
