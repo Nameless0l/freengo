@@ -93,18 +93,18 @@ Pour résoudre le problème, nous avons développé Freengo, une plateforme acce
 
 - **Client** : Personne ou groupe utilisant le service.
 - **Passager** : Client ayant une demande de déplacement acceptée.
-- **Colis** : Objets transportés
+- **Colis** : Objets transportés.
 - **Véhicule** : Engin de transport.
 - **Itinéraire** : Trajet parcouru.
 - **Forfait de transport** : Formules de déplacement (ramassage ou dépôt).
 
-## Cahier des charges
+## 📜 Cahier des charges
 
-### Objectifs du projet
+### 🎯 Objectifs du projet
 
 Freengo vise à fournir une plateforme intuitive pour la gestion des déplacements, assurant une expérience utilisateur fluide et sécurisée.
 
-### Exigences fonctionnelles
+### 📋 Exigences fonctionnelles
 
 - **Inscription et Authentification** : Création de compte et connexion sécurisée.
 - **Gestion des Profils** : Mise à jour des informations personnelles.
@@ -113,32 +113,32 @@ Freengo vise à fournir une plateforme intuitive pour la gestion des déplacemen
 - **Communication** : Messagerie instantanée entre clients et chauffeurs.
 - **Tarification et Paiement** : Estimation des coûts et paiements sécurisés.
 
-### Exigences non fonctionnelles
+### 📈 Exigences non fonctionnelles
 
 - **Performance** : Réponse rapide aux interactions utilisateur.
 - **Sécurité** : Protection des données personnelles et financières.
 - **Convivialité** : Interface utilisateur intuitive.
 - **Maintenance et Évolutivité** : Code bien documenté et architecture évolutive.
 
-## Modélisation du projet
+## 🏗️ Modélisation du projet
 
-### Analyse
+### 🔍 Analyse
 
 - **Diagramme de classes** : Description des acteurs et objets du système.
 - **Diagramme des cas d'utilisations** : Fonctionnalités du système.
 - **Description textuelle des cas d'utilisations** : Scénarios d'utilisation.
 
-### Conception
+### 🧩 Conception
 
 Utilisation du modèle OSI pour la modélisation et d'une formule mathématique pour le calcul du prix du trajet.
 
-## Services utilisés
+## 🔧 Services utilisés
 
-### Type de communication
+### 📡 Type de communication
 
 La communication entre les micro-services se fait principalement via des messages asynchrones utilisant des files d'attente (RabbitMQ, Kafka).
 
-### Listes des services que nous utilisons
+### 🛠️ Listes des services que nous utilisons
 
 - **Itinéraire** : Calcul et gestion des trajets.
 - **Chat** : Communication entre utilisateurs.
@@ -146,34 +146,34 @@ La communication entre les micro-services se fait principalement via des message
 - **Annulation** : Gestion des annulations de trajets.
 - **Gemini** : IA pour recommandations et prédictions.
 
-## Implémentation
+## 💻 Implémentation
 
-### Interfaces
+### 📱 Interfaces
 
 - **Landing page** : Page d'accueil du site.
 - **Accueil utilisateur** : Page de connexion et fonctionnalités pour les clients.
 - **Accueil chauffeur** : Page de connexion et fonctionnalités pour les chauffeurs.
-- **** : Page d'accueil du site.
----
-### Back-end
+
+### ⚙️ Back-end
 
 - **Technologies Utilisées** : Java, Spring Boot.
 - **Base de données** : ScyllaDB.
 - **Architecture du Système** : Modulaire et évolutive.
----
-## Difficultés probables
+
+## 🚧 Difficultés probables
 
 - **Scalabilité** : Gestion de la croissance de l'application.
 - **Sécurité des données** : Protection des informations sensibles.
 - **Intégration continue** : Maintien des mises à jour régulières.
----
-## Améliorations et Recommandations
+
+## 🔧 Améliorations et Recommandations
 
 - **Optimisation des performances** : Amélioration des requêtes et algorithmes.
 - **Mise en cache** : Réduction des accès à la base de données.
 - **Monitoring et Analytics** : Outils pour surveiller les performances en temps réel.
----
-## Déploiement
+
+## 🚀 Déploiement
+
 
 ### Prérequis
 
